@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "StrukturListTest",
+            "request": "launch",
+            "mainClass": "PRAKTIKUM_PEMROGRAMAN1/Pertemuan_5.StrukturListTest",
+            "projectName": "PRAKTIKUM_PEMROGRAMAN1"
+        },
+        {
+            "type": "java",
             "name": "StrukturListTest2",
             "request": "launch",
             "mainClass": "PRAKTIKUM_PEMROGRAMAN1/Pertemuan_5.StrukturListTest2",

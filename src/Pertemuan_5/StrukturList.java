@@ -104,43 +104,36 @@ public class StrukturList {
             }
         }
     }
-    
-    public void removeMid (int e) {
-    Node preNode = new Node (0) ;
-    Node tempNode;
-    int i;
-    boolean ketemu;
 
-    if (isEmpty())
-    {
-        System.out.println("Element List Kosong");
-    }
-    else {
-        ketemu = false;
-        i = 1;
-        tempNode = HEAD;
-        while (tempNode.getNext () != null && ! ketemu) {
-            if (tempNode.getData () == e)
-            {
-                ketemu = true;
+    public void removeMid(int e) {
+        Node preNode = null;
+        Node tempNode;
+        boolean ketemu = false;
+    
+        if (isEmpty()) {
+            System.out.println("Element List Kosong");
+        } else {
+            tempNode = HEAD;
+            while (tempNode != null && !ketemu) {
+                if (tempNode.getData() == e) {
+                    ketemu = true;
+                } else {
+                    preNode = tempNode;
+                    tempNode = tempNode.getNext();
+                }
             }
-            preNode = tempNode;
-            tempNode = tempNode.getNext();
-            i++;
+            if (ketemu) {
+                if (preNode == null) { // Jika node yang akan dihapus adalah node pertama
+                    HEAD = tempNode.getNext();
+                } else {
+                    preNode.setNext(tempNode.getNext());
+                }
+                dispose(tempNode);
+            } else {
+                System.out.println("Elemen tidak ditemukan dalam list");
+            }
         }
-        if (ketemu == true)
-        {
-            if (i == 1)
-            {
-                HEAD = tempNode.getNext();
-            }
-            else
-            {
-                preNode.setNext (tempNode.getNext());
-                dispose (tempNode);
-            }
-        }
     }
-}
+    
 }
 
