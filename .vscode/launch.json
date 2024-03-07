@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "StrukturListTest2",
+            "request": "launch",
+            "mainClass": "PRAKTIKUM_PEMROGRAMAN1/Pertemuan_5.StrukturListTest2",
+            "projectName": "PRAKTIKUM_PEMROGRAMAN1"
+        },
+        {
+            "type": "java",
+            "name": "StrukturListTest1",
+            "request": "launch",
+            "mainClass": "PRAKTIKUM_PEMROGRAMAN1/Pertemuan_5.StrukturListTest1",
+            "projectName": "PRAKTIKUM_PEMROGRAMAN1"
+        },
+        {
+            "name": "Launch Chrome",
+            "request": "launch",
+            "type": "chrome",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        }
+    ]
+}

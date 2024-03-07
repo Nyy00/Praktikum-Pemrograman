@@ -104,5 +104,43 @@ public class StrukturList {
             }
         }
     }
+    
+    public void removeMid (int e) {
+    Node preNode = new Node (0) ;
+    Node tempNode;
+    int i;
+    boolean ketemu;
+
+    if (isEmpty())
+    {
+        System.out.println("Element List Kosong");
+    }
+    else {
+        ketemu = false;
+        i = 1;
+        tempNode = HEAD;
+        while (tempNode.getNext () != null && ! ketemu) {
+            if (tempNode.getData () == e)
+            {
+                ketemu = true;
+            }
+            preNode = tempNode;
+            tempNode = tempNode.getNext();
+            i++;
+        }
+        if (ketemu == true)
+        {
+            if (i == 1)
+            {
+                HEAD = tempNode.getNext();
+            }
+            else
+            {
+                preNode.setNext (tempNode.getNext());
+                dispose (tempNode);
+            }
+        }
+    }
+}
 }
 
