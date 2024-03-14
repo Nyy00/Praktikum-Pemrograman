@@ -1,5 +1,7 @@
 package Pertemuan_5;
 
+import Pertemuan_6.StrukturList;
+
 public class StrukturListTest1 {
     public static void main(String[] args) {
         StrukturList list = new StrukturList(); // Create list dengan keyword new

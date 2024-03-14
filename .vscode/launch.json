@@ -2,6 +2,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "StrukturListTest2",
+            "request": "launch",
+            "mainClass": "PRAKTIKUM_PEMROGRAMAN1/Pertemuan_6.StrukturListTest2",
+            "projectName": "PRAKTIKUM_PEMROGRAMAN1"
+        },
+        {
+            "type": "java",
+            "name": "StrukturListTest1",
+            "request": "launch",
+            "mainClass": "PRAKTIKUM_PEMROGRAMAN1/Pertemuan_6.StrukturListTest1",
+            "projectName": "PRAKTIKUM_PEMROGRAMAN1"
+        },
+        {
+            "type": "java",
+            "name": "StrukturListTest",
+            "request": "launch",
+            "mainClass": "PRAKTIKUM_PEMROGRAMAN1/Pertemuan_6.StrukturListTest",
+            "projectName": "PRAKTIKUM_PEMROGRAMAN1"
+        },
+        {
+            "type": "java",
             "name": "StrukturListTest",
             "request": "launch",
             "mainClass": "PRAKTIKUM_PEMROGRAMAN1/Pertemuan_5.StrukturListTest",

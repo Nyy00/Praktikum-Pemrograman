@@ -1,4 +1,4 @@
-package Pertemuan_5;
+package Pertemuan_6;
 
 import Pertemuan_3.Node;
 
@@ -134,6 +134,36 @@ public class StrukturList {
             }
         }
     }
+    public boolean find(int x) {
+        
+        Node curNode = HEAD;
+        boolean ketemu = false;
+
+        while (curNode != null && !ketemu) {
+            if (curNode.getData() == x)
+                ketemu = true;
+            else
+                curNode = curNode.getNext();
+        }
+        return ketemu;
+    }
+
+    public int size() {
+        Node curNode = HEAD;
+        int jumlah = 0;
+    
+        while (curNode != null) {
+            jumlah++;
+            curNode = curNode.getNext();
+        }
+    
+        return jumlah;
+    }    
+
+    public void hapusSemuaElemen() {
+        HEAD = null;
+    }
+    
     
 }
 

@@ -1,4 +1,4 @@
-package Pertemuan_5;
+package Pertemuan_6;
 
 public class Node {
     private double data;
